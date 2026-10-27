@@ -1,0 +1,17 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-color: rgb(78, 139, 118);
+}
+.card{
+  width: 90%;
+  background-color: rgb(95, 95, 141);
+  text-align: center;
+}
+.search{
+  width: 80;
+  color: rgb(222, 156, 74);
+
+}
