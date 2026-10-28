@@ -1,17 +1,48 @@
-<html>
-  <head> <title> WEATHER FORECAST</title>
-  <link rel="stylesheet" href="style.css"></head>
-  <body>
-    <div class="card">
-      <div class="search">
-        <input type="text" placeholder="enter city name" spellcheck="false">
-        <button> <img src="images/search.png"></button>
-      </div>
-      <div class="weather">
-        <img src="images/rain.png" class="weather-icon">
-        <h1 class="temp">22 C</h1>
-        <h2 class="city">New York</h2>
-      </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h1>Weather App ☁️</h1>
+        <p>Check the weather in your city</p>
+
+        <form id="search-form">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Enter city name"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message">Search for a city to see its weather.</p>
+
+        <div id="weather-info" class="hidden">
+            <h2 id="city-name"></h2>
+            <div id="weather-icon">🌤️</div>
+            <h1 id="temperature"></h1>
+            <h3 id="description"></h3>
+
+            <div class="details">
+                <div class="detail-box">
+                    <span>💧 Humidity</span>
+                    <strong id="humidity"></strong>
+                </div>
+                <div class="detail-box">
+                    <span>💨 Wind Speed</span>
+                    <strong id="wind"></strong>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
